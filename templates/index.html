@@ -1,0 +1,16 @@
+<html>
+    <body>
+        {% if result %}
+	<IMG SRC="data:image;base64,{{img_data}}" alt="img_data"  id="imgslot"/>
+        <div>{{result}}</div>
+	<HR>
+        {% endif %}
+        ファイルを選択して送信してください<BR>
+        <form action = "./" method = "POST" 
+           enctype = "multipart/form-data">
+           <input type = "file" name = "file" accept="image/png" />
+           <input type = "submit"/>
+        </form>
+
+     </body>
+</html>
